@@ -2,7 +2,7 @@
 require_once '../model/usuario_m.php';
 require_once '../controller/Usuario_c.php';
 
-session_start();
+session_start(); // Iniciar la sesión
 
 if (!isset($_SESSION['usuario'])) {
     header('Location: ../view/login.php');
@@ -36,7 +36,6 @@ $rutaImagenPerfil = "../data/img/" . $imagen;
     <div id="contenido">
         <?php include '../public/js/nav.php'; ?>
         
-        <div id="repertorio">
                 <div id="usuarios">
                     <?php foreach ($usuarios as $usuario): 
                         if($usuario['id'] == $id_contacto){ ?>
@@ -90,8 +89,7 @@ $rutaImagenPerfil = "../data/img/" . $imagen;
                                 </div>
                             </div>
                     <?php } endforeach; ?>
-                </div>   
-        </div>
+                </div>
     </div>
     
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>

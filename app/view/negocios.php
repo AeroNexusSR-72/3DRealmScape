@@ -37,7 +37,8 @@ $rutaImagenPerfil = "../data/img/" . $imagen;
         
         <div id="repertorio">
                 <div id="usuarios">
-                    <?php foreach ($usuarios as $usuario): ?>
+                    <?php foreach ($usuarios as $usuario): 
+                        if($usuario['id'] != $_SESSION['usuario']['id']){ ?>
                         <div class="user-card" onclick="window.location.href='contacto.php?id=<?php echo urlencode($usuario['id']);?>'">
                             <div class="user-image">
                                 <img src="../data/img/<?php echo htmlspecialchars($usuario['imagen']); ?>" alt="<?php echo htmlspecialchars($usuario['n_perfil']); ?>">
@@ -47,7 +48,7 @@ $rutaImagenPerfil = "../data/img/" . $imagen;
                                 <p>Seguidores: <!-- Puedes añadir aquí el número de seguidores, si lo tienes disponible --></p>
                             </div>
                         </div>
-                    <?php endforeach; ?>
+                    <?php }endforeach; ?>
                 </div>   
         </div>
     </div>

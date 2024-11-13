@@ -27,7 +27,7 @@
                 "verga"
             ]
         },
-        "descargas": 34
+        "descargas": 35
     },
     {
         "id": 2,
@@ -81,13 +81,16 @@
         ],
         "comentarios": {
             "fecha": [
-                "2024-11-05"
+                "2024-11-05",
+                "2024-11-13"
             ],
             "autor": [
-                "Za90000y"
+                "Za90000y",
+                "Aero_nexusSR71"
             ],
             "texto": [
-                "ese pony salvaje"
+                "ese pony salvaje",
+                "Me gusta la mam\u00e1 de mauro"
             ]
         },
         "descargas": 0
@@ -203,9 +206,15 @@
             "objetos"
         ],
         "comentarios": {
-            "fecha": [],
-            "autor": [],
-            "texto": []
+            "fecha": [
+                "2024-11-13"
+            ],
+            "autor": [
+                "Aero_nexusSR71"
+            ],
+            "texto": [
+                "Hola mi amor"
+            ]
         },
         "descargas": 0
     }

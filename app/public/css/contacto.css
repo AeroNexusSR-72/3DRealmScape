@@ -7,6 +7,8 @@
     background-color: #ddd;
     height: auto;
     padding: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
 #descrip{
@@ -59,20 +61,58 @@
 }
 
 #contact-descrip img{
-    border-radius: 120px;
-    width: 250px;
-    height: 250px;
+    border-radius: 100vw;
+    width: 300px;
+    height: 300px;
     margin-bottom: 20px;
 }
 
 #tabla{
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: left;
-    background-color: cornflowerblue;
 }
 
 
 th,td{
-    padding: 10px;
+    padding: 2vb;
     width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+
+    #contact-descrip img{
+        border-radius: 100vw;
+        width: 25vh;
+        height: 25vh;
+    }
+    #contacto{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px
+    }
+
+    #contact-descrip{
+        width: 80%;
+        margin-bottom: 2vh;
+    }
+
+    .form-contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px
+    }
+
+    .input-form textarea,.input-form input,.input-form label{
+        margin-bottom: 0.5vh;
+        height: 4vh;
+    }
+    .input-form button{
+        margin-top: 1vh;
+        height: 50px;
+        width: 25%;
+    }
 }
