@@ -1,0 +1,152 @@
+@import url('../css/paleta_colores.css');
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: var(--fuente--defecto);
+    color: var(--tema--F);
+    background-color: var(--tema--C);
+}
+
+h1{
+    color: var(--color--B);
+}
+
+#contenido{
+    height: auto;
+    width: 500px;
+    background-color: var(--tema--A);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0px 0px 25px var(--tema--G)
+}
+
+#form{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form label, #form input{
+    text-align: left;
+    font-size: 15px;
+    border: 0;
+    display: flex;
+}
+
+#form label{
+    width: 490px;
+    padding:10px;
+    padding-left: 0;
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color--B);
+}
+
+#form input{
+    padding-bottom: 4px;
+    padding: 10px;
+    padding-left: 0px;
+    font-size: 16px;
+    color: var(--tema--G);
+}
+
+.img-input{
+    display:flex; 
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    border: 3px var(--tema--A) solid;
+}
+
+.img-input img{
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    filter: invert(0.1);
+}
+
+/* #form .img-input input{
+    width: 100%;
+    background-color: var(--tema--B);
+    color:var(--fuente--color);
+    font-size: 18px;
+} */
+
+#form .img-input input{
+    width: 100%;
+    background-color: var(--tema--A);
+    border-bottom: 3px var(--tema--C) solid;
+    color: var(--tema--G);
+}
+
+#form button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2%;
+    width: 120px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--color--B);
+    color:var(--fuente--color);
+    cursor: pointer;
+}
+
+
+a,p{
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color--B);
+    font-weight: bold;
+}
+
+textarea {
+    min-width: 100%;
+    min-height: 100px;
+    background-color: var(--tema--B);
+    border:0;
+    color: var(--tema--G);
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #form label, #form input{
+        width: 100%;
+    }
+
+    #form{
+        padding: 0;
+    }
+
+    .input-group{
+        margin-bottom: 20px;
+    }
+
+    #contenido{
+        width: 80%;
+        padding: 0;
+    }
+
+    p{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+}

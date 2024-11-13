@@ -1,0 +1,60 @@
+@import url('../css/paleta_colores.css');
+
+
+#div_model{
+    display:flex;
+    justify-content:center;
+    height: 400px;
+    background: radial-gradient(var(--tema--C),var(--tema--D));
+}
+
+.comment{
+    background-color: var(--tema--A);
+    border: 5px solid var(--tema--C);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.container{
+    margin-bottom: 10px;
+}
+
+
+.user-comment{
+    display: flex;
+    flex-direction: row;
+}
+
+.comment-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-form label{
+    margin-bottom: 2vh;
+    font-size: 1rem;
+}
+
+.comment-form button{
+    background-color: var(--tema--disponible);
+    border: 0;
+    width: 170px;
+    margin-top: 2vh;
+    border-radius: 10px;
+    padding: 1vb;
+}
+
+@media screen and (max-width: 768px) {
+    #left{
+        width: 200px;
+    }
+
+    .comment-form button{
+        background-color: var(--tema--disponible);
+        border: 0;
+        width: 180px;
+        margin-top: 2vh;
+        border-radius: 10px;
+        padding: 1vb;
+    }
+}

@@ -1,0 +1,212 @@
+[
+    {
+        "id": 1,
+        "nombre": "Flores low poly",
+        "descripcion": "Un modelo 3D detallado de un robot futurista.",
+        "modelo3D": "..\/data\/3D\/flores.glb",
+        "fecha": "2024-10-31",
+        "valor": "gratis",
+        "creador": "Aero_nexusSR71",
+        "tipo": [
+            "objetos"
+        ],
+        "comentarios": {
+            "fecha": [
+                "2024-10-31",
+                "2024-10-32",
+                "2024-11-01"
+            ],
+            "autor": [
+                "Felmaber",
+                "Centa72277",
+                "Za90000y"
+            ],
+            "texto": [
+                "Que buenas flores",
+                "si a bueno",
+                "verga"
+            ]
+        },
+        "descargas": 34
+    },
+    {
+        "id": 2,
+        "nombre": "Castillo de arena",
+        "descripcion": "Un modelo 3D detallado de un robot futurista.",
+        "modelo3D": "..\/data\/3D\/castillo_de_arena.glb",
+        "fecha": "2024-10-20",
+        "valor": "gratis",
+        "creador": "Za90000y",
+        "tipo": [
+            "objetos"
+        ],
+        "comentarios": {
+            "fecha": [
+                "2024-10-31",
+                "2024-11-01",
+                "2024-11-01",
+                "2024-11-01",
+                "2024-11-02",
+                "2024-11-07"
+            ],
+            "autor": [
+                "Felmaber",
+                "Aero_nexusSR72",
+                "Aero_nexusSR72",
+                "Za90000y",
+                "Aero_nexusSR71",
+                "Centa72277"
+            ],
+            "texto": [
+                "increible",
+                "puta madre",
+                "pito",
+                "la puta madre",
+                "Holaaaa",
+                "a la verga"
+            ]
+        },
+        "descargas": 3
+    },
+    {
+        "id": 3,
+        "nombre": "caballo low poly",
+        "descripcion": "hecho en workbench",
+        "modelo3D": "..\/data\/3D\/low_poly_horse.glb",
+        "fecha": "2024-11-01",
+        "valor": "gratis",
+        "creador": "Aero_nexusSR71",
+        "tipo": [
+            "objetos"
+        ],
+        "comentarios": {
+            "fecha": [
+                "2024-11-05"
+            ],
+            "autor": [
+                "Za90000y"
+            ],
+            "texto": [
+                "ese pony salvaje"
+            ]
+        },
+        "descargas": 0
+    },
+    {
+        "id": 4,
+        "nombre": "Pez Payaso",
+        "descripcion": "es un pez, que mas quieres",
+        "modelo3D": "..\/data\/3D\/clown_fish_low_poly_animated.glb",
+        "fecha": "2024-11-01",
+        "valor": "gratis",
+        "creador": "Aero_nexusSR71",
+        "tipo": [
+            "animales"
+        ],
+        "comentarios": {
+            "fecha": [
+                "2024-11-02",
+                "2024-11-05"
+            ],
+            "autor": [
+                "Za90000y",
+                "Za90000y"
+            ],
+            "texto": [
+                "Un pecesito malo &gt;:3",
+                "se me perdio el nemo"
+            ]
+        },
+        "descargas": 5
+    },
+    {
+        "id": 5,
+        "nombre": "Bugatti",
+        "descripcion": "un increible bugati de edicion limitada",
+        "modelo3D": "..\/data\/3D\/low_poly_classic_race_car_bugatti_type_35.glb",
+        "fecha": "2024-11-07",
+        "valor": "25000",
+        "creador": "Centa72277",
+        "tipo": [
+            "deporte"
+        ],
+        "comentarios": {
+            "fecha": [],
+            "autor": [],
+            "texto": []
+        },
+        "descargas": 0
+    },
+    {
+        "id": 6,
+        "nombre": "Armas Pack 1",
+        "descripcion": "un paquete de muchas armas",
+        "modelo3D": "..\/data\/3D\/low_poly_weapons.glb",
+        "fecha": "2024-11-07",
+        "valor": "45000",
+        "creador": "Centa72277",
+        "tipo": [
+            "objetos"
+        ],
+        "comentarios": {
+            "fecha": [],
+            "autor": [],
+            "texto": []
+        },
+        "descargas": 0
+    },
+    {
+        "id": 7,
+        "nombre": "Pack bosque 1",
+        "descripcion": "Un paquete ideal para ambientacion",
+        "modelo3D": "..\/data\/3D\/low_poly_forest_1.glb",
+        "fecha": "2024-11-07",
+        "valor": "56000",
+        "creador": "Centa72277",
+        "tipo": [
+            "escenario"
+        ],
+        "comentarios": {
+            "fecha": [],
+            "autor": [],
+            "texto": []
+        },
+        "descargas": 0
+    },
+    {
+        "id": 8,
+        "nombre": "Saco de comida",
+        "descripcion": "objetos para ambientacion de juego",
+        "modelo3D": "..\/data\/3D\/low_poly_opened_sack_of_food.glb",
+        "fecha": "2024-11-07",
+        "valor": "5000",
+        "creador": "Centa72277",
+        "tipo": [
+            "alimentos"
+        ],
+        "comentarios": {
+            "fecha": [],
+            "autor": [],
+            "texto": []
+        },
+        "descargas": 0
+    },
+    {
+        "id": 9,
+        "nombre": "Computadora retro",
+        "descripcion": "una computadora que tardo mucho hacerla",
+        "modelo3D": "..\/data\/3D\/retro_computer__low-poly__blockbench.glb",
+        "fecha": "2024-11-07",
+        "valor": "350000",
+        "creador": "Aero_nexusSR71",
+        "tipo": [
+            "objetos"
+        ],
+        "comentarios": {
+            "fecha": [],
+            "autor": [],
+            "texto": []
+        },
+        "descargas": 0
+    }
+]

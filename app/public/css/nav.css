@@ -1,0 +1,114 @@
+@import url('../css/paleta_colores.css');
+
+#menu-1{
+    background-color: #dbdbdb;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: sticky;
+    top: 0;
+    right: 0; 
+    border-bottom: 1px solid var(--tema--B);
+    /* box-shadow: 0px 0px 20px var(--tema--F); */
+    z-index: 1000;
+}
+
+#menu-2{
+    background-color: var(--tema--A);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 60px;
+}
+
+.nav-item{
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    border-radius:20px; cursor: pointer;
+}
+
+#menu-1 a:hover, #menu-2 a:hover{
+    text-decoration: none;
+}
+
+#menu-1 a{
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-item .nav-link {
+    color: var(--tema--G);
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item:nth-child(1):hover .nav-link,
+.nav-item:nth-child(2):hover .nav-link,
+.nav-item:nth-child(3):hover .nav-link,
+.nav-item:nth-child(4):hover .nav-link{
+    color: var(--fuente--color);
+}
+
+.nav-item:nth-child(1):hover .nav-link {
+    background-color: var(--color--B);
+}
+
+.nav-item:nth-child(2):hover .nav-link {
+    background-color: var(--tema--calidad);
+}
+
+.nav-item:nth-child(3):hover .nav-link {
+    background-color: var(--color--D);
+}
+
+.nav-item:nth-child(4):hover .nav-link {
+    background-color: var(--color--C);
+}
+
+/* Estilo para el enlace dropdown activo */
+.nav-item:nth-child(3) .dropdown-toggle:hover,
+.nav-item:nth-child(3) .dropdown-toggle:focus {
+    background-color: var(--color--D);
+    color: var(--fuente--color);
+}
+
+#img{
+    border-radius:20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #menu-2 .nav .nav-item .nav-link {
+        height: auto;
+    }
+    #menu-2{
+        margin-top:auto;
+        height: 180px;
+        justify-content: left;
+    }
+    #menu-2 .nav{
+        font-weight: 600;
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        border-radius:20px; cursor: pointer;
+        color: var(--tema--G);
+        height: auto;
+
+    }
+
+    #menu-1,#menu-2{
+        width: 100vw;
+    }
+}

@@ -1,0 +1,38 @@
+@import url('../css/paleta_colores.css');
+
+.subir{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--tema--C);
+    width: 40%;
+    height: auto;
+    padding: 20px;
+    color: var(--tema--G);
+}
+
+.subir label{
+    text-align: left;
+    margin-bottom: 1vh;
+    font-size: 1.5rem;
+}
+
+.subir input,.subir select,.subir textarea{
+    text-align: left;
+    margin-bottom: 3vh;
+    background-color: var(--tema--D);
+    color: var(--tema--A);
+    border: 0;
+    padding: 10px;
+}
+
+.subir button[type="submit"]{
+    margin-top: 1vh;
+}
+
+
+@media screen and (max-width: 768px) {
+    .subir{
+        width: 90%;
+        height: auto;
+    }
+}

@@ -1,0 +1,90 @@
+@import url('../css/paleta_colores.css');
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-family: var(--fuente--defecto);
+    color: var(--fuente--color);
+    background-color: var(--tema--D);
+}
+
+#contenido {
+    width: 100%; /* Cambiado para ocupar el 100% */
+    max-width: 1380px; /* Limitar ancho máximo */
+    background-color: var(--tema--A);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 0px; /* Añadir padding */
+}
+
+#cerrar-sesion {
+    display: flex;
+    align-items: center;
+}
+
+#presentacion {
+    height: 600px;
+    background: radial-gradient(var(--tema--C), var(--tema--D));
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 20px; /* Añadir padding */
+}
+
+#user-presentacion {
+    height: 600px;
+    background-color: var(--tema--B);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 20px; /* Añadir padding */
+}
+
+#texto {
+    width: 50%;
+    display: flex;
+    font-size: 80px;
+    flex-direction: column;
+    padding-left: 5vw;
+}
+
+#texto p {
+    margin: 10px 0; /* Eliminar márgenes innecesarios */
+    text-align: left;
+    color: var(--tema--A);
+}
+
+#saludo {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 20px;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: var(--tema--F);
+}
+
+#repertorio {
+    background-color: var(--tema--A);
+    padding: 20px; /* Añadir padding */
+}
+
+@media screen and (max-width: 768px) {
+    #contenido {
+        width: 100vw;
+    }
+
+    #texto {
+        font-size: 50px; /* Ajustar tamaño de fuente en móviles */
+        width: 100%; /* Ajustar ancho en móviles */
+    }
+
+    #saludo {
+        font-size: 25px; /* Ajustar tamaño de saludo en móviles */
+    }
+}

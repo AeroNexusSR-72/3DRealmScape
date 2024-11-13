@@ -1,0 +1,210 @@
+@import url('../css/paleta_colores.css');
+/* styles.css */
+
+.username {
+    font-size: 24px;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.main-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: var(--tema--A);
+    background-color: var(--tema--F);
+    font-size: 17px;
+}
+
+.left-column{
+    width: 25%;
+    padding: 10px;
+}
+
+.right-column{
+    width: 50%;
+    padding: 10px;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.profile-section p{
+    font-size: 24px;
+}
+
+.upload-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.upload-btn {
+    background-color: var(--color--C);
+    color: var(--tema--A);
+    cursor: pointer;
+    padding:10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.website {
+    margin-bottom: 20px;
+}
+
+.activity {
+    background-color: var(--tema--D);
+    display: flex;
+    padding: 20px;
+    justify-content: left;
+    text-align: left;
+    flex-direction: column;
+}
+
+.right-column {
+    width: 50%;
+    padding: 10px;
+    margin-left: 10vw;
+}
+
+.right-column h1{
+    color: var(--color--C);
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    width: 48%; /* Ajusta el ancho de cada columna para que dos entren en una fila */
+    margin-bottom: 15px;
+}
+
+.row-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.row label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+    color: var(--color--C);
+}
+
+.row input {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--tema--D);
+    border: 0;
+    color: var(--tema--A);
+    font-size: 17px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.save-btn, .reset-btn {
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.save-btn {
+    background-color: #28a745;
+}
+
+.reset-btn {
+    background-color: #6c757d;
+}
+
+.check{
+    font-size: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+}
+
+.check input{
+    width: auto;
+    height: auto;
+}
+
+.check p{
+    font-size: 1rem;
+    margin: 0;
+    margin-left: 10px;
+}
+
+textarea {
+    height: 45px;
+    min-height: 45px;
+    max-height: 45px;
+    background-color: var(--tema--B);
+    border:0;
+    color: var(--tema--G);
+}
+
+#descripcion{
+    display:flex; justify-content:center;
+}
+
+#descripcion .row{
+    width: 23vw;
+}
+
+@media screen and (max-width: 768px) {
+    .main-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        color: var(--tema--A);
+        background-color: var(--tema--F);
+        font-size: 17px;
+    }
+
+    .right-column,.left-column{
+        width: 90vw;
+        margin-left: 0px;
+    }
+
+    .row label{
+        font-size: 20px;
+    }
+
+    .row input{
+        font-size: 15px;
+    }
+
+    #descripcion .row{
+        width: 86vw;
+    }
+
+}
