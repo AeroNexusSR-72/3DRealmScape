@@ -1,0 +1,78 @@
+@import url('../css/paleta_colores.css');
+
+#contacto {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #ddd;
+    height: auto;
+    padding: 40px;
+}
+
+#descrip{
+    width: 100%;
+}
+
+.form-contact{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    padding-right: 0;
+}
+
+.form{
+    width: 100%;
+}
+
+.input-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
+    margin-bottom: 10px;
+}
+
+.input-form label{
+    margin-bottom: 10px;
+}
+
+.input-form input{
+    width: 100%;
+}
+
+.input-form textarea{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#contact-descrip{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-descrip img{
+    border-radius: 120px;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+#tabla{
+    margin-top: 30px;
+    text-align: left;
+    background-color: cornflowerblue;
+}
+
+
+th,td{
+    padding: 10px;
+    width: 300px;
+}

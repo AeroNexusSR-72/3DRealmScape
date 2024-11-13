@@ -77,7 +77,13 @@ $rutaImagenPerfil = "../data/img/" . $imagen;
                                 <div class="product-info text-center">
                                     <img src="../public/img/logo.svg" alt="" width="29px">
                                     <h2><?php echo htmlspecialchars($producto['nombre']); ?></h2>
-                                    <p><?php echo htmlspecialchars($producto['valor']); ?></p>
+                                    <p>
+                                        <?php if ($producto['valor'] != "gratis") {
+                                            echo htmlspecialchars("$".$producto['valor']);
+                                        }else{
+                                            echo htmlspecialchars($producto['valor']); 
+                                        }?>
+                                    </p>
                                 </div>
                             </div>
                         </div>

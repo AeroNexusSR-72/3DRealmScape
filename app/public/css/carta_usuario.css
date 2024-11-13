@@ -1,0 +1,48 @@
+@import url('../css/paleta_colores.css');
+
+#usuarios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.user-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.user-image img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.user-info {
+    flex: 1;
+}
+
+.user-info h2 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #333;
+}
+
+.user-info p {
+    margin: 5px 0 0;
+    color: #666;
+}
