@@ -1,6 +1,6 @@
 <nav id="menu-1">
 <div>
-    <img src="../public/img/logo_completo.svg" alt="img" width="120px">
+    <img src="../public/img/logo_completo.svg" alt="img">
 </div>
 <div id="cerrar-sesion">
     <nav class="nav">

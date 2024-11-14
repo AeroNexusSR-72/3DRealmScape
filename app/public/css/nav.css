@@ -42,6 +42,7 @@
 #menu-1 a{
     font-weight: 600;
     text-decoration: none;
+    font-size: 1rem;
 }
 
 .nav-item .nav-link {
@@ -84,7 +85,12 @@
 #img{
     border-radius:20px;
     cursor: pointer;
-    margin-left: 10px;
+}
+
+#menu-1 > div > img{
+    width: 120px;
+    padding:0;
+    object-fit: cover;
 }
 
 
@@ -110,5 +116,21 @@
 
     #menu-1,#menu-2{
         width: 100vw;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #menu-1 > div > img{
+        width: 110px;
+        object-fit: cover;
+    }
+
+    .nav-item .nav-link {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    #img{
+        margin-left: 7px;
     }
 }

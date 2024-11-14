@@ -24,7 +24,6 @@ $id = $_SESSION['usuario']['id'];
 $imagen = isset($_SESSION['usuario']['imagen']) ? $_SESSION['usuario']['imagen'] : 'default.png';
 $rutaImagenPerfil = "../data/img/" . $imagen;
 
-// Filtrar modelos solo por el creador del usuario
 $modelosFiltrados = array_filter($modelos, function($modelo) use ($usuario) {
     return $modelo['creador'] === $usuario['n_perfil'];
 });
