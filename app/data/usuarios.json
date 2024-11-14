@@ -52,7 +52,15 @@
         "telefono": "798465",
         "imagen": "Felmaber_Caballero.jpg",
         "descripcion": "#BestTeacher",
-        "seguidores": 0
+        "seguidores": 0,
+        "correos": [
+            {
+                "usuario": "Valkar2",
+                "descripcion": "Necesito un modelo de un carro BMW",
+                "presupuesto": "500000",
+                "fecha": "2024-11-29"
+            }
+        ]
     },
     {
         "id": 4,
