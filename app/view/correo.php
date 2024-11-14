@@ -47,11 +47,29 @@ $correosUsuario = isset($usuario['correos']) ? $usuario['correos'] : [];
                             <p><strong>Descripción:</strong> <?php echo htmlspecialchars($correo['descripcion']); ?></p>
                             <p><strong>Presupuesto:</strong> <?php echo htmlspecialchars("$".number_format($correo['presupuesto'],0,',','.')); ?></p>
                             <p><strong>Fecha Límite:</strong> <?php echo htmlspecialchars($correo['fecha']); ?></p>
+                            <?php
+                            // Fecha de envío en formato Y-m-d (como la que tienes en $correo['fecha'])
+                            $fechaEnvio = new DateTime($correo['fecha']);
+
+                            // Fecha actual
+                            $fechaActual = new DateTime(date('Y-m-d'));
+
+                            // Calcular la diferencia entre ambas fechas
+                            $diferencia = $fechaEnvio->diff($fechaActual);
+
+                            // Obtener el número de días
+                            $diasEnviados = $diferencia->days;
+
+                            echo "<p>".$diasEnviados . " días restantes</p>";
+                            ?>
                         <?php echo '</div>';?>
                         <?php echo '<div class="boton">';?>
                             <button>Ver Detalles</button>
                             <button>Responder</button>
-                            <?php echo '</div>';?>
+                            <button>Aceptar</button>
+                            <button>Borrar</button>
+                        <?php echo '</div>';?>
+                        <?php echo '</div>';?>
                     <?php echo '</div>';?>
                 <?php endforeach; ?>
             <?php else: ?>
