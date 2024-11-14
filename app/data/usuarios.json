@@ -33,7 +33,15 @@
         "telefono": "3005960608",
         "imagen": "Za90000y_glich.jpg",
         "descripcion": "La vida es una... Que bueno que terminara",
-        "seguidores": 0
+        "seguidores": 0,
+        "correos": [
+            {
+                "usuario": "Aero_nexusSR71",
+                "descripcion": "necesito un modelo X",
+                "presupuesto": "100000",
+                "fecha": "2024-11-29"
+            }
+        ]
     },
     {
         "id": 3,
