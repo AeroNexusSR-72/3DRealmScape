@@ -20,7 +20,7 @@
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
+    background-color: #353535;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -39,10 +39,10 @@
 .user-info h2 {
     font-size: 1.2em;
     margin: 0;
-    color: #333;
+    color: #e0e0e0;
 }
 
 .user-info p {
     margin: 5px 0 0;
-    color: #666;
+    color: #c4c4c4;
 }
