@@ -4,11 +4,12 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: #ddd;
+    background-color: var(--tema--F);
     height: auto;
     padding: 40px;
     justify-content: center;
     align-items: center;
+    color: var(--tema--A);
 }
 
 #descrip{
@@ -46,16 +47,16 @@
 .input-form input{
     width: 100%;
     margin-bottom: 10px;
-    background-color: var(--tema--B);
-    color: var(--tema--G);
+    background-color: var(--tema--D);
+    color: var(--tema--A);
     border:0;
     padding: 10px;
 }
 
 .input-form textarea{
     width: 100%;
-    background-color: var(--tema--B);
-    color: var(--tema--G);
+    background-color: var(--tema--D);
+    color: var(--tema--A);
     border:0;
     padding: 10px;
 }
@@ -69,8 +70,8 @@
 }
 
 .input-form button{
-    background-color: var(--tema--B);
-    color: var(--tema--G);
+    background-color: var(--tema--D);
+    color: var(--tema--A);
     border:0;
     padding: 10px;
     width: 100px;
@@ -93,7 +94,7 @@
 #tabla{
     margin-top: 20px;
     text-align: left;
-    background-color: var(--tema--B);
+    background-color: var(--tema--D);
 }
 
 

@@ -93,6 +93,10 @@
     object-fit: cover;
 }
 
+#img{
+    margin-left: 12px;
+}
+
 
 @media screen and (max-width: 768px) {
     #menu-2 .nav .nav-item .nav-link {

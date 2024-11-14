@@ -100,16 +100,5 @@
         "imagen": "Caspirito_1730384279.jpg",
         "descripcion": "Por que?",
         "seguidores": 0
-    },
-    {
-        "id": 7,
-        "nombre": "cinta1",
-        "n_perfil": "mario",
-        "email": "cinta1@example",
-        "password": "11111",
-        "telefono": "1234",
-        "imagen": "mario.jpeg",
-        "descripcion": "",
-        "seguidores": 0
     }
 ]

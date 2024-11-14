@@ -45,7 +45,7 @@ $correosUsuario = isset($usuario['correos']) ? $usuario['correos'] : [];
                         <?php echo '<div class="datos-correo">';?>
                             <h4>Encargo de: <?php echo htmlspecialchars($correo['usuario']); ?></h4>
                             <p><strong>Descripción:</strong> <?php echo htmlspecialchars($correo['descripcion']); ?></p>
-                            <p><strong>Presupuesto:</strong> $<?php echo htmlspecialchars($correo['presupuesto']); ?></p>
+                            <p><strong>Presupuesto:</strong> <?php echo htmlspecialchars("$".number_format($correo['presupuesto'],0,',','.')); ?></p>
                             <p><strong>Fecha Límite:</strong> <?php echo htmlspecialchars($correo['fecha']); ?></p>
                         <?php echo '</div>';?>
                         <?php echo '<div class="boton">';?>
