@@ -14,14 +14,6 @@ class UsuarioController {
         $this->modeloUsuario->agregarUsuario($datosUsuario);
     }
 
-    // public function autenticarUsuario($email, $password) {
-    //     $usuario = $this->modeloUsuario->obtenerUsuarioPorEmail($email);
-    //     if ($usuario && password_verify($password, $usuario['password'])) {
-    //         return $usuario; // Usuario autenticado
-    //     }
-    //     return null; // Credenciales inválidas
-    // }
-
     public function actualizarUsuario($id, $nuevosDatos) {
         $usuarios = $this->modeloUsuario->obtenerUsuarios();
         foreach ($usuarios as &$usuario) {
@@ -41,6 +33,38 @@ class UsuarioController {
             }
         }
         return null;
+    }
+
+    // Agregar función para manejar correos
+    public function agregarCorreo($idUsuario, $usuario, $descripcion, $presupuesto) {
+        // Ruta de los correos
+        $rutaCorreos = "../data/correos.json";
+
+        // Si el archivo de correos no existe, se crea
+        if (!file_exists($rutaCorreos)) {
+            $correos = [];
+            file_put_contents($rutaCorreos, json_encode($correos, JSON_PRETTY_PRINT));
+        } else {
+            $correos = json_decode(file_get_contents($rutaCorreos), true);
+        }
+
+        // Verificar si ya existe una entrada para este usuario
+        if (!isset($correos[$idUsuario])) {
+            $correos[$idUsuario] = [];
+        }
+
+        // Agregar nuevo correo al usuario
+        $correoNuevo = [
+            'usuario' => $usuario,
+            'descripcion' => $descripcion,
+            'presupuesto' => $presupuesto
+        ];
+
+        // Agregar a la lista de correos del usuario
+        $correos[$idUsuario][] = $correoNuevo;
+
+        // Guardar los cambios en el archivo de correos
+        file_put_contents($rutaCorreos, json_encode($correos, JSON_PRETTY_PRINT));
     }
 }
 ?>

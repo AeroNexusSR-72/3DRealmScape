@@ -19,7 +19,7 @@ $modelo3D = new Modelo3D("../data/modelos3D.json");
 $controlModelo3D = new Modelo3DController($modelo3D);
 $modelos = $controlModelo3D->obtenerModelos();
 
-$usuario = $_SESSION['usuario']; // Acceder a la información del usuario almacenada
+$usuario = $_SESSION['usuario'];
 $id = $_SESSION['usuario']['id'];
 $imagen = isset($_SESSION['usuario']['imagen']) ? $_SESSION['usuario']['imagen'] : 'default.png';
 $rutaImagenPerfil = "../data/img/" . $imagen;
@@ -29,7 +29,6 @@ $modelosFiltrados = array_filter($modelos, function($modelo) use ($usuario) {
     return $modelo['creador'] === $usuario['n_perfil'];
 });
 
-// Convertir a array para asegurarnos de que podemos acceder por índice
 $modelosFiltrados = array_values($modelosFiltrados);
 ?>
 
@@ -47,15 +46,9 @@ $modelosFiltrados = array_values($modelosFiltrados);
 <body>
     <div id="contenido">
         <?php include '../public/js/nav.php'; ?>
-        <div id="presentacion" class="text-center">
-            <div id="texto">
-                <p style="margin: 0; width:100%;">Explora la comunidad</p>
-                <p style="font-size:30px; margin: 0px;">Hay muchos modelos para ti</p>
-            </div>
-        </div>
         <div id="repertorio">
             <div id="saludo" class="text-center">
-                <p>¡Hola, <?php echo htmlspecialchars($usuario['n_perfil']); ?>! Tiempo sin verte</p>
+                <p>Modelos de <?php echo htmlspecialchars($usuario['n_perfil']); ?></p>
             </div>
             <div class="row">
     <?php

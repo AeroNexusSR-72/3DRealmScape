@@ -45,11 +45,19 @@
 
 .input-form input{
     width: 100%;
+    margin-bottom: 10px;
+    background-color: var(--tema--B);
+    color: var(--tema--G);
+    border:0;
+    padding: 10px;
 }
 
 .input-form textarea{
     width: 100%;
-    margin-bottom: 10px;
+    background-color: var(--tema--B);
+    color: var(--tema--G);
+    border:0;
+    padding: 10px;
 }
 
 #contact-descrip{
@@ -60,16 +68,32 @@
     align-items: center;
 }
 
-#contact-descrip img{
-    border-radius: 100vw;
+.input-form button{
+    background-color: var(--tema--B);
+    color: var(--tema--G);
+    border:0;
+    padding: 10px;
+    width: 100px;
+    transition: 0.5s;
+}
+
+.input-form button:hover{
+    background-color: var(--tema--C);
+}
+
+#contact-descrip img {
+    border-radius: 50%;
     width: 300px;
     height: 300px;
+    object-fit: cover;
     margin-bottom: 20px;
 }
+
 
 #tabla{
     margin-top: 20px;
     text-align: left;
+    background-color: var(--tema--B);
 }
 
 
@@ -77,6 +101,50 @@ th,td{
     padding: 2vb;
     width: 300px;
 }
+
+#correos {
+    margin-top: 20px;
+}
+
+.correo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.datos-correo {
+    flex: 1;
+    padding: 20px;
+    background-color: #ddd;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.boton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.boton button {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.boton button:hover {
+    background-color: #45a049; /* Cambia el color cuando el botón es hover */
+}
+
 
 @media screen and (max-width: 768px) {
 

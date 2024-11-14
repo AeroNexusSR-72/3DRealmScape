@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = trim($_POST['password']);
 
     // Buscar usuario por email
-    $usuario = $modeloUsuario->obtenerUsuarioPorEmail($email);
+    $usuario = $modeloUsuario->obtenerUsuarioPorEmail($_POST['email']);
 
     // Verificar si existe el usuario y si la contraseña coincide
     if ($usuario && $usuario['password'] === $password) {

@@ -8,6 +8,9 @@
             <a class="nav-link active" aria-current="page" href="../view/logout.php">Cerrar Sesión</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../view/correo.php">Correo</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="../view/upload.php">Subir</a>
         </li>
         <li class="nav-item">
@@ -24,30 +27,6 @@
         </li>
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="../view/negocios.php">Negocios</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Explorar Modelos</a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Objetos</a></li>
-                <li><a class="dropdown-item" href="#">Robot</a></li>
-                <li><a class="dropdown-item" href="#">Escenario</a></li>
-                <li><a class="dropdown-item" href="#">Arquitectura</a></li>
-                <li><a class="dropdown-item" href="#">Vehículos</a></li>
-                <li><a class="dropdown-item" href="#">Personaje</a></li>
-                <li><a class="dropdown-item" href="#">Criatura</a></li>
-                <li><a class="dropdown-item" href="#">Animales</a></li>
-                <li><a class="dropdown-item" href="#">Naturaleza</a></li>
-                <li><a class="dropdown-item" href="#">Artefactos</a></li>
-                <li><a class="dropdown-item" href="#">Edificios</a></li>
-                <li><a class="dropdown-item" href="#">Máquinas</a></li>
-                <li><a class="dropdown-item" href="#">Juguetes</a></li>
-                <li><a class="dropdown-item" href="#">Alimentos</a></li>
-                <li><a class="dropdown-item" href="#">Muebles</a></li>
-                <li><a class="dropdown-item" href="#">Fantasía</a></li>
-                <li><a class="dropdown-item" href="#">Historia</a></li>
-                <li><a class="dropdown-item" href="#">Deporte</a></li>
-                <li><a class="dropdown-item" href="#">Tecnología</a></li>
-            </ul>
         </li>
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="../view/m_propios.php">Mis Modelos</a>

@@ -8,8 +8,20 @@
         "telefono": "3006408720",
         "imagen": "Aero_nexusSR71_\u2661.jpeg",
         "descripcion": "now... there's nothing to tell",
-        "modelos_enviados": [
-            1
+        "seguidores": 0,
+        "correos": [
+            {
+                "usuario": "Za90000y",
+                "descripcion": "12345",
+                "presupuesto": "12345",
+                "fecha": "2024-11-29"
+            },
+            {
+                "usuario": "Za90000y",
+                "descripcion": "12345",
+                "presupuesto": "12345",
+                "fecha": "2024-11-29"
+            }
         ]
     },
     {
@@ -21,9 +33,7 @@
         "telefono": "3005960608",
         "imagen": "Za90000y_glich.jpg",
         "descripcion": "La vida es una... Que bueno que terminara",
-        "modelos_enviados": [
-            2
-        ]
+        "seguidores": 0
     },
     {
         "id": 3,
@@ -34,7 +44,7 @@
         "telefono": "798465",
         "imagen": "Felmaber_Caballero.jpg",
         "descripcion": "#BestTeacher",
-        "modelos_enviados": []
+        "seguidores": 0
     },
     {
         "id": 4,
@@ -45,7 +55,15 @@
         "telefono": "98746513",
         "imagen": "Centa72277_minecraft.jpg",
         "descripcion": "Pero la quer\u00eda tanto...",
-        "modelos_enviados": []
+        "seguidores": 0,
+        "correos": [
+            {
+                "usuario": "Aero_nexusSR71",
+                "descripcion": "ayuda",
+                "presupuesto": "1234",
+                "fecha": "2024-11-22"
+            }
+        ]
     },
     {
         "id": 5,
@@ -56,7 +74,7 @@
         "telefono": "021265426",
         "imagen": "Valkar2_1730384155.jpg",
         "descripcion": "@valkar2",
-        "modelos_enviados": []
+        "seguidores": 0
     },
     {
         "id": 6,
@@ -67,6 +85,17 @@
         "telefono": "98746574",
         "imagen": "Caspirito_1730384279.jpg",
         "descripcion": "Por que?",
-        "modelos_enviados": []
+        "seguidores": 0
+    },
+    {
+        "id": 7,
+        "nombre": "cinta1",
+        "n_perfil": "mario",
+        "email": "cinta1@example",
+        "password": "11111",
+        "telefono": "1234",
+        "imagen": "mario.jpeg",
+        "descripcion": "",
+        "seguidores": 0
     }
 ]

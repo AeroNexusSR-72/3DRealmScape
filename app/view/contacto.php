@@ -43,24 +43,20 @@ $rutaImagenPerfil = "../data/img/" . $imagen;
                                 <div id="contact-descrip">
                                     <img src="../data/img/<?php echo htmlspecialchars($usuario['imagen']); ?>" alt="<?php echo htmlspecialchars($usuario['n_perfil']); ?>">
                                     <div>
-                                        <h1>usuario</h1>
+                                        <h1><?php echo $usuario['n_perfil'] ?></h1>
                                         <table id="tabla">
                                             <tbody>
                                                 <tr>
-                                                    <th>Usuario</th>
-                                                    <td>usuario1</td>
-                                                </tr>
-                                                <tr>
                                                     <th>Nombre</th>
-                                                    <td>Juan Andrés</td>
+                                                    <td><?php echo $usuario['nombre'] ?></td>
                                                 </tr>
                                                 <tr>
                                                     <th>Número</th>
-                                                    <td>3006408720</td>
+                                                    <td><?php echo $usuario['telefono'] ?></td>
                                                 </tr>
                                                 <tr>
                                                     <th>Correo</th>
-                                                    <td>juan@example.com</td>
+                                                    <td><?php echo $usuario['email'] ?></td>
                                                 </tr>
                                                 <tr>
                                                     <th>Seguidores</th>
@@ -71,20 +67,30 @@ $rutaImagenPerfil = "../data/img/" . $imagen;
                                     </div>
                                 </div>
                                 <div class="form-contact">
-                                    <h2>Formulario</h2>
-                                    <form action="" class="form">
-                                    <div class="input-form">
-                                        <label for="">Nombre:</label>
-                                        <input type="text">
+                                    <h2>Formulario de Encargo</h2>
+                                    <form action="../controller/enviar_correo.php" method="POST" class="form">
+                                        <div class="input-form">
+                                            <label for="nombre">Perfil:</label>
+                                            <input type="text" name="nombre" value="<?php echo htmlspecialchars($_SESSION['usuario']['n_perfil']); ?>" required>
 
-                                        <label for="">Correo:</label>
-                                        <input type="email">
+                                            <!-- Correo del remitente, visible para el usuario que envía el encargo -->
+                                            <label for="email">Tu Correo:</label>
+                                            <input type="email" name="email" value="<?php echo htmlspecialchars($_SESSION['usuario']['email']); ?>" required>
 
-                                        <label for="">Descripcion:</label>
-                                        <textarea name="" id="descrip">a</textarea>
+                                            <!-- Campo oculto con el correo del freelancer como destinatario -->
+                                            <input type="hidden" name="destinatario" value="<?php echo htmlspecialchars($usuario['email']); ?>">
 
-                                        <button type="submit">enviar</button>
-                                    </div>
+                                            <label for="descripcion">Descripción del Encargo:</label>
+                                            <textarea name="descripcion" id="descrip" required></textarea>
+
+                                            <label for="presupuesto">Presupuesto Estimado:</label>
+                                            <input type="number" name="presupuesto" min="0" required>
+
+                                            <label for="fecha">Fecha Límite:</label>
+                                            <input type="date" name="fecha" required>
+
+                                            <button type="submit">Enviar</button>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
