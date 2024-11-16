@@ -16,6 +16,11 @@ class Usuario {
         return json_decode($usuariosJson, true);
     }
 
+    // Guardar todos los usuarios en el archivo JSON
+    public function guardarUsuarios($usuarios) {
+        file_put_contents($this->archivo, json_encode($usuarios, JSON_PRETTY_PRINT));
+    }
+
     // Obtener un usuario por ID
     public function obtenerUsuarioPorId($id) {
         $usuarios = $this->obtenerUsuarios();
@@ -56,7 +61,7 @@ class Usuario {
         }
 
         // Guardar los usuarios actualizados en el archivo
-        file_put_contents($this->archivo, json_encode($usuarios, JSON_PRETTY_PRINT));
+        $this->guardarUsuarios($usuarios);
     }
 }
 ?>
