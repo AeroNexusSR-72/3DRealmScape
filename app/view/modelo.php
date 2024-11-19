@@ -97,6 +97,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['borrar_comentario']) 
     <link rel="stylesheet" href="../public/css/modelo.css">
     <link rel="stylesheet" href="../public/css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paymentfont/1.1.1/paymentfont.min.css">
 </head>
 <body>
     <div id="contenido">
@@ -129,12 +131,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['borrar_comentario']) 
                         <!-- Formulario de descarga -->
                         <form method="POST" action="">
                             <p class="text-muted">Descargas:<?php echo htmlspecialchars($modeloSeleccionado['descargas']); ?></p>
-                            <?php if($modeloSeleccionado['valor'] == "gratis"){?>
+                            <?php if ($modeloSeleccionado['valor'] == "gratis"): ?>
                                 <input type="hidden" name="descargar" value="1">
                                 <button type="submit" class="btn btn-primary">Descargar</button>
-                            <?php }else{?>
-                                <button type="submit" class="btn btn-primary">Comprar</button>
-                            <?php }?>
+                            <?php else: ?>
+                                <!-- Botón para abrir el modal de pago -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPago">
+                                    Comprar
+                                </button>
+                            <?php endif; ?>
                         </form>
                     </div>
                 </div>
@@ -168,6 +173,43 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['borrar_comentario']) 
             </div>
         </div>
     </div>
+
+
+    <!-- Modal de Pago -->
+<div class="modal fade" id="modalPago" tabindex="-1" aria-labelledby="modalPagoLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalPagoLabel">Formulario de Pago</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3">
+            <i class="pf pf-visa"></i>
+            <i class="pf pf-mastercard"></i>
+            <i class="pf pf-amex"></i>
+            </div>
+            <form method="POST" action="pagar.php">
+                <div class="mb-3">
+                    <label for="tarjeta" class="form-label"><i class="fas fa-credit-card"></i>
+                        Número de tarjeta</label>
+                    <input type="text" class="form-control" id="tarjeta" name="tarjeta" required>
+                </div>
+                <div class="mb-3">
+                    <label for="fecha-expiracion" class="form-label"><i class="fas fa-calendar-alt"></i>
+                        Fecha de expiración</label>
+                    <input type="month" class="form-control" id="fecha-expiracion" name="fecha_expiracion" required>
+                </div>
+                <div class="mb-3">
+                    <label for="cvv" class="form-label"><i class="fas fa-lock"></i> CVV</label>
+                    <input type="text" class="form-control" id="cvv" name="cvv" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Realizar Pago</button>
+            </form>
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

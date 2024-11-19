@@ -74,6 +74,11 @@ body {
     padding: 20px; /* Añadir padding */
 }
 
+label i {
+    margin-right: 8px; /* Ajusta el espacio entre el icono y el texto */
+    font-size: 18px;    /* Ajusta el tamaño de los iconos */
+}
+
 @media screen and (max-width: 768px) {
     #contenido {
         width: 100vw;

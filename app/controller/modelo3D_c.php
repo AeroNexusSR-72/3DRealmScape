@@ -1,5 +1,10 @@
 <?php
 
+//modelo3D -> el modelo
+//datosModelo -> informacion del modelo
+//agregarModelo, obtenerModelos y guardarModelos pertenecen al Modelo del modulo 3D
+
+
 class Modelo3DController {
     private $modelo3D;
 
@@ -37,6 +42,19 @@ class Modelo3DController {
 
         // Guardar los cambios en el archivo JSON
         $this->modelo3D->guardarModelos($modelos);
+    }
+
+    public function buscarModelos($termino) {
+        $modelos = $this->modelo3D->obtenerModelos();
+        $resultados = [];
+    
+        foreach ($modelos as $modelo) {
+            if (stripos($modelo['nombre'], $termino) !== false || 
+                stripos($modelo['descripcion'], $termino) !== false) {
+                $resultados[] = $modelo;
+            }
+        }
+        return $resultados;
     }
 }
 

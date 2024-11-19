@@ -57,10 +57,13 @@
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="../view/m_propios.php">Mis Modelos</a>
         </li>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <li class="nav-item">
+            <form class="d-flex" method="POST" action="../controller/buscar.php">
+                <input class="form-control me-2" type="search" name="search" placeholder="Buscar" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
+            <ul id="results" class="list-group mt-3"></ul>
+        </li>
     </ul>
 </div>
 </nav>

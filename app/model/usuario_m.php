@@ -20,7 +20,7 @@ class Usuario {
     public function guardarUsuarios($usuarios) {
         file_put_contents($this->archivo, json_encode($usuarios, JSON_PRETTY_PRINT));
     }
-
+ 
     // Obtener un usuario por ID
     public function obtenerUsuarioPorId($id) {
         $usuarios = $this->obtenerUsuarios();
