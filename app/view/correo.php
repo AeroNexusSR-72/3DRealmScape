@@ -70,7 +70,6 @@ $correosUsuario = isset($usuario['correos']) ? $usuario['correos'] : [];
                             <button>Borrar</button>
                         <?php echo '</div>';?>
                         <?php echo '</div>';?>
-                    <?php echo '</div>';?>
                 <?php endforeach; ?>
             <?php else: ?>
                 <p>No has enviado correos aún.</p>

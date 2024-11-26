@@ -57,6 +57,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     file_put_contents("../data/usuarios.json", json_encode($usuarios, JSON_PRETTY_PRINT));
 
+    header('Location: ../view/negocios.php');
+
 }
 ?>
 
