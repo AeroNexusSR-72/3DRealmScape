@@ -72,7 +72,7 @@ $correosUsuario = isset($usuario['correos']) ? $usuario['correos'] : [];
                         <?php echo '</div>';?>
                 <?php endforeach; ?>
             <?php else: ?>
-                <p>No has enviado correos aún.</p>
+                <p>No te han llegado correos aún.</p>
             <?php endif; ?>
         </div>
     </div>
